@@ -82,3 +82,5 @@ inoremap jj <Esc>
 Plugin 'xuhdev/vim-latex-live-preview'
 
 set backspace=indent,eol,start
+
+
