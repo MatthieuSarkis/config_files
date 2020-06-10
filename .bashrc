@@ -4,6 +4,10 @@ PS1='\[\e[1;33m\][\w]\[\e[m\] 🦊 '
 
 export ML_PATH="$HOME/ml"
 
+	#vim as default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # Fin de mes ajouts
 
 
