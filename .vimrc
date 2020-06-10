@@ -80,3 +80,5 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 inoremap jj <Esc>
 
 Plugin 'xuhdev/vim-latex-live-preview'
+
+set backspace=indent,eol,start
