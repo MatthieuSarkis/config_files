@@ -8,6 +8,8 @@ export ML_PATH="$HOME/ml"
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+alias open=xdg-open
+
 # Fin de mes ajouts
 
 

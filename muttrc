@@ -1,0 +1,16 @@
+set folder = "imaps://sarkis@kias.re.kr@mail.kias.re.kr:993"
+set smtp_url = "smtp://sarkis@kias.re.kr@mail.kias.re.kr:587"
+
+set smtp_authenticators="login"
+set ssl_starttls=yes
+set ssl_force_tls=yes
+
+set from = "sarkis@kias.re.kr"
+set realname = "Matthieu Sarkis"
+
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "+Drafts"
+
+mailboxes =INBOX =Sent =Trash =Drafts =Junk -Other
