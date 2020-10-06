@@ -37,6 +37,26 @@ let g:lightline = {
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
+" youcompleteme config for c++"
+let g:ycm_global_ycm_extra_conf = '/Users/matthieu.sarkis/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_seed_identifiers_with_syntax = 1
+set completeopt=menu
+
+" make YCM compatible with UltiSnips (using <Ctrl-N>, <Ctrl-P>)
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
+
+" commands mappings
+nnoremap <F1> :pclose<CR>:silent YcmCompleter GetDoc<CR>
+nnoremap <S-F1> :pclose<CR>
+nnoremap <C-F1> :YcmCompleter GetType<CR>
+nnoremap <F9> :YcmCompleter GoTo<CR>
+nnoremap <S-F9> :YcmCompleter GoToReferences<CR>
+nnoremap <F10> :YcmCompleter FixIt<CR>
+
+let g:ycm_use_clangd = 1
+
+
 " turn-on python compatible highlighting
 let python_highlight_all=1
 syntax on
