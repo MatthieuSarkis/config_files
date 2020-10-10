@@ -17,6 +17,7 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'morhetz/gruvbox'
 Plugin 'preservim/nerdtree'
+Plugin 'relastle/bluewery.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -56,14 +57,18 @@ nnoremap <F10> :YcmCompleter FixIt<CR>
 
 let g:ycm_use_clangd = 1
 
-
 " turn-on python compatible highlighting
 let python_highlight_all=1
 syntax on
 
 " setting up the color theme
-colorscheme gruvbox
-set background=dark
+"colorscheme gruvbox
+"set background=dark
+"
+"colorscheme bluewery
+"let g:lightline = { 'colorscheme': 'bluewery' }
+
+colorscheme atlantis
 
 " to open and close the file tree
 map <C-n> :NERDTreeToggle<CR>
@@ -115,6 +120,9 @@ inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
+
+" insert a space after a coma tomake code clearer
+inoremap , , 
 
 " for VIM to detect whether we are in a virtual environment
 "py3 << EOF
