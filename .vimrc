@@ -121,9 +121,6 @@ inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
 
-" insert a space after a coma tomake code clearer
-inoremap , , 
-
 " for VIM to detect whether we are in a virtual environment
 "py3 << EOF
 "import os
