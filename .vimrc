@@ -22,6 +22,9 @@ Plugin 'relastle/bluewery.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" better copy-paste ability
+set clipboard=unnamed
+
 " to improve the backspace behavior
 let g:SimpylFold_docstring_preview=1
 set laststatus=2
