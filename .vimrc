@@ -22,9 +22,6 @@ Plugin 'relastle/bluewery.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-" better copy-paste ability
-set clipboard=unnamed
-
 " to improve the backspace behavior
 let g:SimpylFold_docstring_preview=1
 set laststatus=2
@@ -103,6 +100,15 @@ au BufNewFile,BufRead *.py
     \ set expandtab |
     \ set autoindent |
     \ set fileformat=unix
+au BufNewFile,BufRead *.cpp
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix
+
 
 " split navigations
 set splitbelow
