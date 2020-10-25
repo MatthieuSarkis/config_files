@@ -18,6 +18,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'morhetz/gruvbox'
 Plugin 'preservim/nerdtree'
 Plugin 'relastle/bluewery.vim'
+Plugin 'arcticicestudio/nord-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -64,11 +65,10 @@ syntax on
 " setting up the color theme
 "colorscheme gruvbox
 "set background=dark
-"
 "colorscheme bluewery
 "let g:lightline = { 'colorscheme': 'bluewery' }
-
 colorscheme atlantis
+"colorscheme nord
 
 " to open and close the file tree
 map <C-n> :NERDTreeToggle<CR>
@@ -101,6 +101,14 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix
 au BufNewFile,BufRead *.cpp
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix
+au BufNewFile,BufRead *.tex
     \ set tabstop=4 |
     \ set softtabstop=4 |
     \ set shiftwidth=4 |
