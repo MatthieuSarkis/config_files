@@ -12,7 +12,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'itchyny/lightline.vim'
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'morhetz/gruvbox'
@@ -107,6 +107,7 @@ au BufNewFile,BufRead *.cpp
     \ set textwidth=79 |
     \ set expandtab |
     \ set autoindent |
+    \ set cindent |
     \ set fileformat=unix
 au BufNewFile,BufRead *.tex
     \ set tabstop=4 |
